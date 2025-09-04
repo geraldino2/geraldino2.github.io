@@ -24,6 +24,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+* [hackerone](https://hackerone.com/apolo2)
+* [hackthebox](https://app.hackthebox.com/profile/1361380)
 * [cve-2025-54796](https://github.com/9001/copyparty/security/advisories/GHSA-5662-2rj7-f2v6)
 * [cve-2025-52567](https://github.com/glpi-project/glpi/security/advisories/GHSA-5mp6-mgmh-vrq7)
 * [cve-2025-52897](https://github.com/glpi-project/glpi/security/advisories/GHSA-6whm-q2rp-prqm)
