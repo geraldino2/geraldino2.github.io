@@ -22,8 +22,7 @@
       "startDate": "2025-04-01",
       "endDate": "",
       "summary": "Conducted penetration tests focused on web applications, identified multiple vulnerabilities resulting in published CVEs, and performed red team exercises.",
-      "highlights": [
-      ]
+      "highlights": []
     },
     {
       "name": "Equinix",
@@ -32,8 +31,7 @@
       "startDate": "2024-04-01",
       "endDate": "2025-04-01",
       "summary": "Worked in a global team focused on datacenter automation, optimizing critical infrastructure processes such as backup, monitoring, virtualization, cloud, DNS, firewalls, and cold storage management.",
-      "highlights": [
-      ]
+      "highlights": []
     },
     {
       "name": "Telefónica S/A",
@@ -42,8 +40,7 @@
       "startDate": "2023-09-01",
       "endDate": "2024-01-01",
       "summary": "Developed technical-commercial proposals for hardware, services, and data solutions. Improved workflows with automation and process optimization.",
-      "highlights": [
-      ]
+      "highlights": []
     },
     {
       "name": "Self Employed",
@@ -52,8 +49,7 @@
       "startDate": "2020-01-01",
       "endDate": "",
       "summary": "Performed mobile and web apps black box penetration testing. Participated in vulnerability disclosure programs (mainly on HackerOne) with more than 50 valid bug reports to big tech companies.",
-      "highlights": [
-      ]
+      "highlights": []
     }
   ],
   "volunteer": [
@@ -65,8 +61,7 @@
       "startDate": "2024-01-01",
       "endDate": "",
       "summary": "Contribute as a volunteer instructor and competition coordinator at IMESec, USP's student cybersecurity group. Teach web security topics, coordinate research efforts, participate in CTFs and create challenges.",
-      "highlights": [
-      ]
+      "highlights": []
     }
   ],
   "education": [
@@ -81,8 +76,7 @@
       "courses": []
     }
   ],
-  "awards": [
-  ],
+  "awards": [],
   "certificates": [
     {
       "name": "Burp Suite Certified Practitioner",
@@ -120,21 +114,13 @@
       "icon": "fa-solid fa-hashtag"
     }
   ],
-  "publications": [
-  ],
+  "publications": [],
   "skills": [
     {
       "name": "DevOps/Cloud",
       "level": "",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Docker, Kubernetes",
-        "Terraform",
-        "GitLab CI",
-        "Puppet, Ansible",
-        "PowerDNS, BIND",
-        "Azure, AWS, Google Cloud"
-      ]
+      "keywords": ["Docker, Kubernetes", "Terraform", "GitLab CI", "Puppet, Ansible", "PowerDNS, BIND", "Azure, AWS, Google Cloud"]
     }
   ],
   "languages": [
@@ -149,10 +135,7 @@
       "icon": ""
     }
   ],
-  "interests": [
-  ],
-  "references": [
-  ],
-  "projects": [
-  ]
+  "interests": [],
+  "references": [],
+  "projects": []
 }
