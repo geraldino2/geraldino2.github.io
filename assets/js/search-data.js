@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-a-simple-inline-announcement",
+        },{id: "post-attacking-thumbor",
+        
+          title: "Attacking thumbor",
+        
+        description: "parser differential between tornado and urlparse, ReDoS, bruteforce, misconfigurations",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/attacking-thumbor/";
+          
+        },
+      },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
