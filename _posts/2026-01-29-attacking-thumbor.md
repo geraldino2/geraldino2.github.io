@@ -23,7 +23,7 @@ This blog post covers:
 
 thumbor provides multiple configurations to harden what the server can do, such as `MAX_WIDTH` or `ALLOWED_SOURCES`; the latter defines which FQDNs thumbor can download images from.
 
-The call stack trace on processing an external image is quite long, but it all starts on `handlers/imaging.py:get` and the most important methods related to the download are on `loaders/http_loader.py`. `loaders/http_loader.py:validate` validates if the given URL is within the whitelist defined by `ALLOWED_SOURCES` and `loaders/http_loader.py:load` is responsible for the download itself. After a lot of simplifications, the code for both functions look like this:
+The call stack trace on processing an external image is quite long, but it all starts on `handlers/imaging.py:get` and the most important methods related to download are on `loaders/http_loader.py`. `loaders/http_loader.py:validate` validates if the given URL is within the whitelist defined by `ALLOWED_SOURCES` and `loaders/http_loader.py:load` is responsible for the download itself. After a lot of simplifications, the code for both functions look like this:
 
 ```python
 import re
@@ -42,7 +42,7 @@ async def load(url):
     return tornado.httpclient.HTTPRequest(url=url)
 ```
 
-`ALLOWED_SOURCES` is an array of FQDNs. It then uses `urllib` to extract the FQDN from an URL and compares it to each value from the array. If the validation succeeds, the URL is passed to `load`. There's one problem with this approach: `thumbor` doesn't have a guarantee that `tornado` will use the same URL parser used on `validate`.
+`ALLOWED_SOURCES` is an array of FQDNs. The function uses `urllib` to extract the FQDN from an URL and compares it to each value from the array. If the validation succeeds, the URL is passed to `load`. There's one problem with this approach: `thumbor` doesn't have a guarantee that `tornado` will use the same URL parser used on `validate`.
 
 Going deep into `tornado` one can see that it indeed uses `urllib`, but it also implements its own logic to separate hosts from ports. A simplified version of the code is provided below:
 
