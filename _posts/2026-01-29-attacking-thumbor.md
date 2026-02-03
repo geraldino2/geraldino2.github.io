@@ -12,7 +12,7 @@ featured: true
 
 The easiest way to send an image to be treated by it is to use unsafe URLs, [enabled by default](https://github.com/thumbor/thumbor/blob/f83495a819d5d417317fc3dbf7a4d10872b4f15f/thumbor/config.py#L385-L390), in the format [http://thumbor-server/unsafe/300x300/smart/path/to/image.jpg](http://thumbor-server/unsafe/300x300/path/to/image.jpg). An obvious problem is that attackers can manipulate the options passed to the server; thumbor relates this security issue to a possibility of [DoS through spam](https://github.com/thumbor/thumbor/blob/f83495a819d5d417317fc3dbf7a4d10872b4f15f/docs/security.rst) and recommends to use HMAC signed URLs as a solution.
 
-This blog post covers:
+This blog post is based on release [7.7.7](https://github.com/thumbor/thumbor/releases/tag/7.7.7) and covers:
 
 - Domain whitelist bypass via a parser differential between `tornado` and `urlparse`;
 - Single request denial of service through ReDoS;
