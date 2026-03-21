@@ -94,4 +94,5 @@ def signature(self, url):
 
 - Documentation says that it's possible to define a callback function for JSONP in the configuration file (`META_CALLBACK_NAME`). Although not documented, it's also possible to do it in the URL: [http://thumbor-server/unsafe/meta/0x0/smart/x.png?callback=foobar](http://thumbor-server/unsafe/meta/0x0/smart/x.png?callback=foobar);
 - It's possible, and potentially dangerous, to have uploads enabled with a non-default configuration of `UPLOAD_ENABLED`;
-- `USE_BLACKLIST` is also a non-default configuration that enables unprivileged users to add URLs to a blacklist. The blacklist is case sensitive and doesn't process the URL in any way.
+- `USE_BLACKLIST` is also a non-default configuration that enables unprivileged users to add URLs to a blacklist. The blacklist is case sensitive and doesn't process the URL in any way;
+- [https://tramoia.sh/trm2/thumbor.html](https://tramoia.sh/trm2/thumbor.html).
